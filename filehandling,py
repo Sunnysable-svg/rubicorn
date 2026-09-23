@@ -1,0 +1,76 @@
+'''
+file handling is used to save files in permanent in file because in files is in read and write , append and closed 
+
+we used 4 files
+pdf,csv,json,text,excel
+
+
+file mode
+1.w= write
+2.r = read
+3.a= append
+4.x= create
+5.w+ = write and read
+6.r+ = read and write
+'''
+
+# file= open('text1.text','w')
+
+# my_file= file.write('This is new file') 
+# print(my_file)
+# file.close()
+
+# file = open ("text1.text","r")
+# print(file.read())
+# file.close()
+
+# file = open ("text1.text","a")
+# data = file.write(" Kj Collage of Engineering")
+# print(data)
+# file.close()
+
+# file = open ("text1.text","r")
+# for i in file:
+#     print(i)
+
+# file = open ("test.text","r")
+# my_file=file.read()
+# print(file)
+# file.close()
+
+# # how file in read and write = r+
+# with open ('test.txt','r+') as file:
+#     file.write("This is file")
+#     print(file.readline())
+
+# with open('test.txt','r') as file:
+#     data= file.readline()
+#     print(data.upper())
+
+## how file in write and read = w+
+# with open ('test.txt','w+') as file:
+#     file.write("This is file")
+#     print(file.readline())
+
+# with open('test.txt','r') as file:
+#     data= file.readline()
+#     print(data.upper())
+
+
+##Now CSV files
+
+# import csv
+# with open("test.txt",'r') as file:
+#     myfile= csv.reader(file)
+#     x= next(myfile)
+#     for row in x:
+#         print(row)
+
+
+# now JSON file
+
+import json
+file= open("post.json", "r")
+my_file=file.read()
+x=json.loads(my_file)
+print(x)
